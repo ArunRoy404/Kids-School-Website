@@ -8,10 +8,11 @@
 }
 
 /* shared style */
-body{
+body {
     max-width: 72.5rem;
     margin: 0px auto;
 }
+
 .btn {
     width: 12.3125rem;
     height: 3.125rem;
@@ -20,6 +21,7 @@ body{
     font-weight: 600;
     border: none;
     color: white;
+    background-color: black;
 }
 
 .orange-font {
@@ -31,9 +33,10 @@ body{
 }
 
 /* navbar */
-.nav-menu{
+.nav-menu {
     display: none;
 }
+
 nav {
     width: auto;
     height: 3.875rem;
@@ -88,40 +91,106 @@ nav {
     gap: 2rem;
     padding: 0px;
 }
-.nav-logo{
+
+.nav-logo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.logo{
+
+.logo {
     width: 3.875rem;
     height: 3.875rem;
 }
 
 
+/* banner */
+.banner-title {
+    font-weight: bold;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
 
+.banner-content p {
+    font-size: 1.25rem;
+}
 
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.125rem;
+}
 
 
 @media screen and (max-width: 576px) {
-    #nav-title, .nav-link, .contact-btn{
+    .btn {
+        font-size: 1rem;
+
+    }
+
+    #nav-title,
+    .nav-link,
+    .contact-btn {
         display: none;
     }
-    .logo{
+
+    .logo {
         width: 2.875rem;
         height: 2.875rem;
     }
-    .nav-menu{
+
+    .nav-menu {
         display: block;
     }
-    .logo{
+
+    .logo {
         width: 3.875rem;
         height: 3.875rem;
     }
-    nav{
+
+    nav {
         padding: 0.75rem 1rem;
-        border-bottom:0.5px solid rgb(254, 163, 1);
+        /* border-bottom:0.5px solid rgb(254, 163, 1); */
+        border: 0.5px solid rgb(254, 163, 1);
         margin: 0px;
     }
 
+    /* banner */
+    .banner {
+        flex-direction: column-reverse;
+        width: 22.3125rem;
+        margin: 1.75rem auto;
+    }
+
+    .banner-img {
+        width: 100%;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-top: 1.25rem;
+    }
+
+    .banner-contant p {
+        font-size: 0.875rem;
+        font-weight: 500;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    .banner-contant {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18;
+        padding: 0px;
+    }
+    .banner{
+        gap: 0px;
+    }
 }
