@@ -1,0 +1,127 @@
+.open-sans-normal {
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+/* shared style */
+body{
+    max-width: 72.5rem;
+    margin: 0px auto;
+}
+.btn {
+    width: 12.3125rem;
+    height: 3.125rem;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    color: white;
+}
+
+.orange-font {
+    color: #FEA301;
+}
+
+.sky-font {
+    color: #01ACFD;
+}
+
+/* navbar */
+.nav-menu{
+    display: none;
+}
+nav {
+    width: auto;
+    height: 3.875rem;
+    margin: 1.25rem 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-title {
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.nav-link a {
+    text-decoration: none;
+}
+
+#home,
+#about,
+#facilities,
+#admission {
+    font: bold;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+#home {
+    color: #FEA301;
+}
+
+#about {
+    color: #01ACFD;
+}
+
+#facilities {
+    color: #05D4DF;
+}
+
+#admission {
+    color: #5D58EF;
+}
+
+.contact-btn {
+    background-color: #FEA301;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 0px;
+}
+.nav-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 3.875rem;
+    height: 3.875rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    #nav-title, .nav-link, .contact-btn{
+        display: none;
+    }
+    .logo{
+        width: 2.875rem;
+        height: 2.875rem;
+    }
+    .nav-menu{
+        display: block;
+    }
+    .logo{
+        width: 3.875rem;
+        height: 3.875rem;
+    }
+    nav{
+        padding: 0.75rem 1rem;
+        border-bottom:0.5px solid rgb(254, 163, 1);
+        margin: 0px;
+    }
+
+}
