@@ -103,6 +103,11 @@
     height: 3.875rem;
 }
 
+/* marquee */
+.marquee{
+    font-weight: bold;
+    color: #01ACFD;
+}
 
 /* banner */
 .banner-title {
