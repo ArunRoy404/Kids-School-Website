@@ -9,12 +9,12 @@
 
 /* shared style */
 .section-width {
-    max-width: 72.5rem;
+    max-width: 80.56%;
     margin: 0px auto;
 }
 
 .btn {
-    width: 12.3125rem;
+    width: 12.3125em;
     height: 3.125rem;
     border-radius: 12px;
     font-size: 1.25rem;
@@ -37,10 +37,10 @@
     display: none;
 }
 
-nav {
-    width: auto;
+.nav-container {
+    width: 80.56%;
     height: 3.875rem;
-    margin: 1.25rem 0px;
+    margin: 1.25rem auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -123,9 +123,9 @@ nav {
     margin-bottom: 0px;
 }
 
-.bg {
-    background-image: url('../assets/bg.png');
-    background-size: cover;
+main {
+    background-image: url("../assets/bg.png");
+    background-position: center
 }
 
 /* curriculum - section */
@@ -236,8 +236,143 @@ nav {
 
 .button {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
+
+/* stories-section */
+.stories-section {
+    background:linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+
+.stories-title{
+    font-size: 2.875rem;
+    font-weight: 700;
+    line-height: 57.5px;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
+}
+
+.story-4, .story-5{
+    display: none;
+}
+
+.story-1{
+    grid-area: story-1;
+}
+.story-2{
+    grid-area: story-2;
+}
+.story-3{
+    grid-area: story-3;
+}
+.story-4{
+    grid-area: story-4;
+}
+.story-5{
+    grid-area: story-5;
+}
+.story-6{
+    grid-area: story-6;
+}
+.story-7{
+    grid-area: story-7;
+}
+
+.stories{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.story-card{
+    background-color: white;
+    border-radius: 16px;
+}
+.story-img{
+    width: 100%;
+    height: 55%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px ;
+    object-fit: cover;
+}
+.story-title{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+}
+.story-title1{
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 38.35px;
+    letter-spacing: 0%;
+}
+.story-detail{
+    display: none;
+    color: rgb(102, 102, 102);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+}
+.story-detail1{
+    display: block;
+}
+.story-btn{
+    border-radius: 47.93px;
+    color: rgb(255, 255, 255); 
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+    padding: 10px 20px;
+    border: none;
+    margin: 0px;
+    position: relative;
+    top: -1.56rem;
+    left: 2.375rem;
+}
+
+.story-btn1{
+    background-color: rgb(60, 216, 232);
+}
+.story-btn2, .story-btn6, .story-btn7{
+    background-color: rgb(149, 178, 38);
+}
+.story-btn3, .story-btn4, .story-btn5{
+    background-color: rgb(93, 88, 240);
+}
+.story-info{
+    width: 13em;
+    position: relative;
+    left: 2.5em;
+}
+.story-info1{
+    width: 27em;
+    position: relative;
+    left: 2.5em;
+}
+
+.story-container{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "story-1 story-1 story-2 story-3"
+        "story-1 story-1 story-6 story-7";
+    gap: 1.25rem;
+}
+
+.view-all-btn{
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    margin-bottom: 3.75rem;
+}
+
 
 
 
@@ -245,7 +380,10 @@ nav {
 @media screen and (max-width: 576px) {
     .btn {
         font-size: 1rem;
+    }
 
+    .section-width {
+        max-width: 91.53%;
     }
 
     #nav-title,
@@ -269,17 +407,20 @@ nav {
     }
 
     nav {
-        padding: 0.75rem 1rem;
         /* border-bottom:0.5px solid rgb(254, 163, 1); */
         border: 0.5px solid rgb(254, 163, 1);
-        margin: 0px;
     }
+
+    .nav-container {
+        width: 91.5%;
+        margin: 00.75rem 1rem;
+    }
+
 
     /* banner */
     .banner {
         flex-direction: column-reverse;
-        width: 22.3125rem;
-        margin: 1.75rem auto;
+        margin: 1rem auto;
     }
 
     .banner-img {
@@ -302,6 +443,7 @@ nav {
     }
 
     .banner-contant {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -320,12 +462,14 @@ nav {
     }
 
     .curriculum {
-        margin: 0px auto 1.25rem;
+        margin: 0px auto 0px;
+        background-image: url('../assets/bg.png');
     }
 
     .curriculum-container {
         gap: 1.25rem;
-        background-image: url('../assets/bg.png');
+        margin-bottom: 1.25rem;
+
     }
 
     .curriculum-title {
@@ -366,5 +510,56 @@ nav {
         font-weight: 700;
         line-height: 19.16px;
         letter-spacing: 0%;
+    }
+
+    /* story-section */
+    .story-4, .story-5{
+        display: block;
+    }
+    .story-1{
+        display: none;
+    }
+    .story-container{
+        grid-template-areas: 
+            "story-2 story-3"
+            "story-4 story-5"
+            "story-6 story-7" ;
+        gap: 0.706em;
+        margin: 20px auto;
+    }
+    .story-btn{
+        border-radius: 28.54px;
+        color: rgb(255, 255, 255); 
+        font-size: 0.6em;
+        font-weight: 500;
+        line-height: 17.12px;
+        letter-spacing: 0%;
+        padding: 6px 11px;
+        border: none;
+        margin: 0px;
+        position: relative;
+        top: -1.43em;
+        left: 0.71em;
+    }
+    .story-title{
+        width: 127px;
+        font-size: 0.6em;
+        font-weight: 700;
+        line-height: 17.12px;
+        letter-spacing: 0%;
+    }
+    .story-info{
+        position: relative;
+        left: 1.375rem;
+        top: -0.5em;
+        width: 127px;
+    }
+    .stories{
+        gap: 0px;
+        align-items: center;
+    }
+    .stories{
+        background-image: url("../assets/bg.png");
+        background-position: center
     }
 }
