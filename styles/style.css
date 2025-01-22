@@ -297,7 +297,7 @@ main {
     object-fit: cover;
 }
 .story-title{
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 700;
     line-height: 28.76px;
     letter-spacing: 0%;
@@ -373,6 +373,90 @@ main {
     margin-bottom: 3.75rem;
 }
 
+/* footer-section */
+footer li{
+    list-style: none;
+}
+
+footer li a{
+    text-decoration: none;
+    color: white;
+}
+
+footer{
+    background-color: rgb(1, 172, 253);
+    color: white;
+    margin: 0px;
+    padding: 123px 228px 174px 140px;
+}
+
+.logo-container h3{
+    font-size: 2.63rem;
+    font-weight: 700;
+    line-height: 39.51px;
+    letter-spacing: 0%;
+    margin: 0px;
+}
+.kids-education p, .about a{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0%;
+    margin: 0px
+}
+
+.about h4{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    margin-top: 0px;
+    margin-bottom: 32px;
+}
+.keep-in-touch{
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0%;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    margin-bottom: 35.68px;
+}
+.icon ul{
+    display: flex;
+}
+.kids-education{
+    margin-top: 26px;
+    width: 37.38%;
+    gap: 0px;
+}
+
+.footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+.about ul{
+    padding: 0px;
+}
+.about li{
+    margin-bottom: 20px;
+}
+.keep-in-touch h4{
+    margin: 0px;
+}
+.keep-in-touch ul{
+    padding: 0px;
+    margin-bottom: 0px;
+}
+.keep-in-touch li{
+    margin-right: 10.15px;
+}
+
 
 
 
@@ -383,7 +467,7 @@ main {
     }
 
     .section-width {
-        max-width: 91.53%;
+        max-width: 92%;
     }
 
     #nav-title,
@@ -486,7 +570,7 @@ main {
     }
 
     .card {
-        width: 22.31rem;
+        width: 100%;
         height: 20.5rem;
         gap: 1.3rem;
     }
@@ -542,7 +626,7 @@ main {
         left: 0.71em;
     }
     .story-title{
-        width: 127px;
+        width: 95%;
         font-size: 0.6em;
         font-weight: 700;
         line-height: 17.12px;
@@ -558,8 +642,16 @@ main {
         gap: 0px;
         align-items: center;
     }
-    .stories{
-        background-image: url("../assets/bg.png");
-        background-position: center
+
+    /* footer */
+    footer{
+        padding: 40px 20px;
+    }
+    .footer-container{
+        flex-direction: column;
+        padding: 0px;
+    }
+    .kids-education{
+        width: 100%;
     }
 }
