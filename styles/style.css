@@ -332,7 +332,7 @@ main {
     border: none;
     margin: 0px;
     position: relative;
-    top: -1.56rem;
+    top: -1.9rem;
     left: 2.375rem;
 }
 
@@ -429,7 +429,7 @@ footer{
     display: flex;
 }
 .kids-education{
-    margin-top: 26px;
+    margin-top: 0px;
     width: 37.38%;
     gap: 0px;
 }
@@ -622,8 +622,8 @@ footer{
         border: none;
         margin: 0px;
         position: relative;
-        top: -1.43em;
-        left: 0.71em;
+        top: -2em;
+        left: 2em;
     }
     .story-title{
         width: 95%;
